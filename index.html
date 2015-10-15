@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script>
+    document.addEventListener("DOMContentLoaded", init, false);
+        function init(){
+            var headScript = document.getElementById("headScript");
+        headScript.addEventListener("click", writeMessage, false);
+        function writeMessage(){
+                alert("mouse click");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--   No. 1      -->
+     <button id="btn1" onclick="myFunction();">1:oprima</button>
+     
+     <!--   No. 2      -->
+     <button id="myButton" onclick="clickBtn">2: click me too</button>
+     <script> function clickBtn(){
+        window.alert("I, two have been clicked");
+         }
+var myButton = document.getElementById("myButton");
+
+myButton.onclick=clickBtn;</script>
+     <!--   No. 3      -->
+     <button id="uniqueBtn">depress me</button>
+     <script>uniqueBtn.addEventListener("click", writeMessage, false);
+    function writeMessage(){
+    alert("3.clicked");
+    }</script>
+    
+    <!--   No. 4      -->
+  
+    <button id="unique2Btn">oppress me</button>
+    <script>
+         
+        unique2Btn.addEventListener("click", function(){alert("4. I have been oppressed!");},false);</script>
+        
+    <!--  No. 5     -->    
+    
+    <input id="headScript"  type="button" value ="5.click me">
+    
+    <!--   No. 6      -->
+    
+    <a id="redirect" href="https://www.google.com/">Visit Google!</a>
+    
+       <script>
+document.getElementById("redirect").addEventListener("click", function(event){
+               //console.log('something line 55');
+             alert("No. 6 google prevented");
+            event.preventDefault();
+             });
+        parent.addEventListener("click",function(event){
+                });
+        </script>
+    
+   
+    <!--   No. 7      -->
+    
+     <input id = "txtFld" type="text">
+     <button id="txtBtn">No. 7 txt feild button</button>
+      <script>
+document.getElementById("txtBtn").addEventListener("click", function(){var element = document.getElementById("txtFld");
+            
+        alert(element.innerHTML);                                                
+          }, false);
+          
+    <!--   No. 8      -->
+          
+         
+         
+    </script>
+     
+     
+     
+     
+ 
+</body>
+</html>
